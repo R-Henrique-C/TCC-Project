@@ -7,9 +7,3 @@ Cabeçalho >
 	- noticias
 	- suporte
 - mudar tema
-
-Oi gente, então, eu não vou conseguir terminar o site hoje.
-Essa semana eu tava sobrecarregado com todos os trabalhos, provas e em específico o trabalho do Elton, o que culminou comigo tendo que fazer o site hoje. 
-Eu já fiz uma parte bem pequena dele (algo como 5 ~ 10% de toda a página inicial).
-Eu vou postar o link do github com o que eu fiz e se algum dos fullstackers quiserem abrir o projeto e tentar mexer nele, sintam-se à-vontade.
-Mas, por favor, me desculpem 
