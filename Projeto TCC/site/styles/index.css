@@ -1,0 +1,54 @@
+@media (max-width: 400px){
+    body{
+        font-family: "Almarai", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 20px;
+        background-color: lightgray;
+        margin: 0;
+    }
+
+    #header-container{
+        background-color: rgb(19, 71, 19);
+        padding: 5px;
+    }
+
+    header{
+        font-family: "Almarai", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 20px;
+        background-color: green;
+        display: flex;
+    }
+
+    .logo-container{
+        background-color: lime;
+        width: 120px;
+        height: 80px;
+        flex: 1;
+    }
+
+    .header-logo{
+        background-color: blue;
+        width: 120px;
+        height: 100%;
+    }
+
+    .action-container{
+        background-color: lightgreen;
+        width: 40px;
+        height: 40px;
+        flex: 1;
+        margin-top: 20px;
+    }
+
+    .menu-action{
+        border: none;
+        border-radius: 5px;
+        width: 40px;
+        height: 100%;
+        float: right;
+        margin-right: 10px;
+    }
+}
