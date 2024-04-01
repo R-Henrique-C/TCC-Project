@@ -1,54 +1,325 @@
-@media (max-width: 400px){
-    body{
-        font-family: "Almarai", sans-serif;
+/* Small Android */
+@media (max-width: 360px){
+    /* Define the default config of the font */
+    .defaultFont{
+        font-family: "Comfortaa", sans-serif;
+        font-optical-sizing: auto;
         font-weight: 700;
         font-style: normal;
-        font-size: 20px;
-        background-color: lightgray;
-        margin: 0;
+        line-height: 33px;
     }
 
-    #header-container{
-        background-color: rgb(19, 71, 19);
-        padding: 5px;
+    /* Define the default config of the horizontal line */
+    .defaultHr{
+        z-index: 1;
+        position: absolute;
+        width: 320px;
+        height: 1px;
+        left: 10px;
+        top: 75px;
+        background-color: #414144;
     }
 
-    header{
-        font-family: "Almarai", sans-serif;
-        font-weight: 700;
+    .pageDot{
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        left: 164px;
+        border-radius: 20px;
+        background: #414144;
+    }
+
+    .defaultButton{
+        position: absolute;
+        width: 200px;
+        height: 60px;
+        left: 70px;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 28px;
+        color: #FFFFFF;
+        background: linear-gradient(84.86deg, #162B9E 0%, #5D1F9B 100%);
+        border-radius: 20px;
+    }
+
+    .defaultFooterLink{
+        position: absolute;
+        width: 60px;
+        height: 16px;
+        font-family: 'Comfortaa';
         font-style: normal;
-        font-size: 20px;
-        background-color: green;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
         display: flex;
+        text-align: center;
+        text-decoration: none;
+        color: #CACACA;
     }
 
-    .logo-container{
-        background-color: lime;
-        width: 120px;
-        height: 80px;
-        flex: 1;
-    }
-
-    .header-logo{
-        background-color: blue;
-        width: 120px;
+    /* Define the size of the page */
+    body{
+        position: relative;
+        width: 360px;
         height: 100%;
+        margin: 0 auto;
+        background-color: #414144;
     }
 
-    .action-container{
-        background-color: lightgreen;
-        width: 40px;
-        height: 40px;
-        flex: 1;
-        margin-top: 20px;
+    /* Set parts of the background as a gradient */
+    #background-gradient{
+        position: absolute;
+        width: 360px;
+        height: 1736px;
+        left: 0px;
+        top: 0px;
+        background-image: linear-gradient(189.08deg, #824498 20.26%, #162B9E 56.24%, #9B5676 86.21%, #FF7658 99.12%);
     }
 
-    .menu-action{
-        border: none;
-        border-radius: 5px;
-        width: 40px;
-        height: 100%;
-        float: right;
-        margin-right: 10px;
+    /* A div containing the logo */
+    #logo-container{
+        position: absolute;
+        width: 180px;
+        height: 54px;
+        left: 20px;
+        top: 20px;
+    }
+
+    /* Logo's icon config */
+    #img-logo{
+        position: absolute;
+        width: 180px;
+        height: 54px;
+    }
+
+    /* A div containing more options's button */
+    #moreOptions-container{
+        position: absolute;
+        width: 30px;
+        height: 25px;
+        left: 310px;
+        top: 37px;
+    }
+
+    /* Button icon config */
+    #button-img{
+        position: absolute;
+        width: 30px;
+        height: 25px;
+        top: 20px;
+    }
+
+    /* A div containing a small text telling about us */
+    #abtUs-container{
+        position: absolute;
+        width: 320px;
+        height: 236px;
+        left: 20px;
+        top: 140px;
+        color: #fff;
+    }
+
+    /* Define the font size of the tittle */
+    #abtUs-tittle{
+        font-size: 30px;
+    }
+
+    /* Define the font size of the paragraph */
+    #abtUs-paragraph{
+        font-size: 15px;
+    }
+
+    /* A div containing a text telling about us */
+    #news-container{
+        z-index: 1;
+        position: absolute;
+        width: 340px;
+        height: 480px;
+        left: 20px;
+        top: 576px;
+        background: #F5F5F5;
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    /* News tittle config */
+    #news-text{
+        position: absolute;
+        width: 130px;
+        height: 33px;
+        left: 40px;
+        font-size: 30px;
+        padding-top: 10px;
+    }
+
+    #news-tittle{
+        position: absolute;
+        width: 320px;
+        height: 27px;
+        left: 10px;
+        top: 100px;
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    #constructionIcon-container{
+        position: absolute;
+        width: 320px;
+        height: 262.35px;
+        left: 10px;
+        top: 158px;
+    }
+
+    #news-pageDot{
+        top: 447px;
+    }
+
+    #solutions-container{
+        z-index: 1;
+        position: absolute;
+        width: 340px;
+        height: 560px;
+        left: 20px;
+        top: 1156px;
+        background: #FFFFFF;
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    #solutions-text{
+        position: absolute;
+        width: 130px;
+        height: 33px;
+        left: 40px;
+        font-size: 30px;
+        padding-top: 10px;
+    }
+
+    #GyMateLogo-container{
+        position: absolute;
+        width: 84px;
+        height: 84px;
+        left: 10px;
+        top: 104px;
+        border-radius: 10px;
+        background: #D9D9D9;
+    }
+
+    #logotype-text{
+        position: absolute;
+        width: 200px;
+        height: 56px;
+        left: 130px;
+        top: 76px;
+        display: flex;
+        align-items: center;
+        font-size: 50px;
+        line-height: 56px;
+        text-align: center;
+        text-decoration-line: underline;
+        color: #162B9E;
+    }
+
+    #solutions-tittle{
+        position: absolute;
+        font-size: 24px;
+        width: 315px;
+        height: 192px;
+        left: 10px;
+        top: 200px;
+    }
+
+    #solutions-button{
+        position: absolute;
+        top: 440px;
+    }
+
+    #solutions-pageDot{
+        top: 526px;
+    }
+
+    /* Breaks the content of the page */
+    #background-break{
+        position: absolute;
+        width: 360px;
+        height: 640px;
+        left: 0px;
+        top: 640px;
+        background-color: #414144;
+    }
+
+    /* Footer with more info */
+    footer{
+        position: absolute;
+        width: 340px;
+        height: 220px;
+        left: 0px;
+        top: 1736px;
+        background: #414144;
+    }
+    
+    #footerAbtUs-container{
+        position: absolute;
+        width: 84px;
+        height: 83px;
+        left: 10px;
+        top: 20px;
+    }
+
+    #footerAbtUs-tittle{
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+
+    #footerLink1{
+        position: absolute;
+        top: 49px;
+    }
+
+    #footerLink2{
+        position: absolute;
+        top: 70px;
+    }
+
+    #footerLink3{
+        position: absolute;
+        top: 92px;
+    }
+
+    #footerHr{
+        position: absolute;
+        width: 340px;
+        height: 1px;
+        left: 10px;
+        top: 140px;
+        border-radius: 20px;
+        border: 0px;
+        background: #CACACA;
+    }
+
+    
+    #idiom-container{
+        position: absolute;
+        width: 86px;
+        height: 28px;
+        left: 10px;
+        top: 170px;
+    }
+
+    #idiom-icon{
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        left: 10px;
+    }
+
+    #idiom-text{
+        position: absolute;
+        width: 48px;
+        height: 20px;
+        left: 48px;
+        font-family: 'Comfortaa';
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        color: #FFFFFF;
     }
 }
