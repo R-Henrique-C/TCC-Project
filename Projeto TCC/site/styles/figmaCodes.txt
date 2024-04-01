@@ -1,0 +1,344 @@
+/* SelectIdiom */
+
+position: absolute;
+width: 86px;
+height: 28px;
+left: 10px;
+top: 1919px;
+
+
+
+/* IdiomLogo */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: 10px;
+top: 1919px;
+
+background: url(Design sem nome (2).png);
+
+
+/* Pt-Br */
+
+position: absolute;
+width: 48px;
+height: 20px;
+left: 48px;
+top: 1923px;
+
+font-family: 'Comfortaa';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 20px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* ContactsContainer */
+
+position: absolute;
+width: 104px;
+height: 28px;
+left: 246px;
+top: 1918px;
+
+
+
+/* FacebookLogo */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: 322px;
+top: 1918px;
+
+background: url(2.png);
+
+
+/* InstagramLogo */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: 284px;
+top: 1918px;
+
+background: url(Design sem nome (1).png);
+
+
+/* LinkedInLogo */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: 246px;
+top: 1918px;
+
+background: url(3.png);
+
+
+/* vl */
+
+position: absolute;
+width: 340px;
+height: 1px;
+left: 10px;
+top: 1908px;
+
+background: #CACACA;
+
+
+/* SolutionsContainer */
+
+position: absolute;
+width: 87px;
+height: 41px;
+left: 114px;
+top: 1756px;
+
+
+
+/* GyMate */
+
+position: absolute;
+width: 56px;
+height: 16px;
+left: 114px;
+top: 1781px;
+
+font-family: 'Comfortaa';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #CACACA;
+
+
+
+/* Soluções */
+
+position: absolute;
+width: 87px;
+height: 20px;
+left: 114px;
+top: 1756px;
+
+font-family: 'Comfortaa';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 20px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* AboutUsContainer */
+
+position: absolute;
+width: 84px;
+height: 83px;
+left: 10px;
+top: 1756px;
+
+
+
+/* Suporte */
+
+position: absolute;
+width: 60px;
+height: 16px;
+left: 10px;
+top: 1802px;
+
+font-family: 'Comfortaa';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #CACACA;
+
+
+
+/* Contato */
+
+position: absolute;
+width: 60px;
+height: 16px;
+left: 10px;
+top: 1823px;
+
+font-family: 'Comfortaa';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #CACACA;
+
+
+
+/* Sobre */
+
+position: absolute;
+width: 44px;
+height: 16px;
+left: 10px;
+top: 1781px;
+
+font-family: 'Comfortaa';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #CACACA;
+
+
+
+/* Empresa */
+
+position: absolute;
+width: 84px;
+height: 20px;
+left: 10px;
+top: 1756px;
+
+font-family: 'Comfortaa';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 20px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Solutions */
+
+position: absolute;
+width: 340px;
+height: 480px;
+left: 20px;
+top: 1156px;
+
+
+
+/* SolutionsContainer */
+
+position: absolute;
+width: 340px;
+height: 480px;
+left: 20px;
+top: 1156px;
+
+background: #FFFFFF;
+border-radius: 20px 0px 0px 20px;
+
+
+/* PageDot */
+
+position: absolute;
+width: 14px;
+height: 14px;
+left: 183px;
+top: 1612px;
+
+background: #414144;
+
+
+/* Button */
+
+position: absolute;
+width: 200px;
+height: 60px;
+left: 90px;
+top: 1536px;
+
+
+
+/* ButtonLogin-Frame */
+
+position: absolute;
+width: 200px;
+height: 60px;
+left: 90px;
+top: 1536px;
+
+background: linear-gradient(84.86deg, #162B9E 0%, #5D1F9B 100%);
+border-radius: 20px;
+
+
+/* Saiba mais */
+
+position: absolute;
+width: 145px;
+height: 28px;
+left: 118px;
+top: 1552px;
+
+font-family: 'Comfortaa';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 28px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Com GyMate, você pode customizar sua rotina de treinos, compartilhar seus avanços e conversar com seu treinador */
+
+position: absolute;
+width: 320px;
+height: 162px;
+left: 30px;
+top: 1354px;
+
+font-family: 'Comfortaa';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 27px;
+display: flex;
+align-items: center;
+
+color: #414144;
+
