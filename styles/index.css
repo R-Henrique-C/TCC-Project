@@ -1,5 +1,5 @@
 /* Small Android */
-@media (max-width: 360px){
+@media (max-width: 400px){
     /* Define the default config of the font */
     .defaultFont{
         font-family: "Comfortaa", sans-serif;
@@ -60,9 +60,8 @@
     /* Define the size of the page */
     body{
         position: relative;
-        width: 360px;
-        height: 100%;
         margin: 0 auto;
+        padding: 0;
         background-color: #414144;
     }
 
@@ -106,7 +105,6 @@
         position: absolute;
         width: 30px;
         height: 25px;
-        top: 20px;
     }
 
     /* A div containing a small text telling about us */
@@ -161,7 +159,7 @@
         text-align: center;
     }
     
-    #constructionIcon-container{
+    #construction-icon{
         position: absolute;
         width: 320px;
         height: 262.35px;
