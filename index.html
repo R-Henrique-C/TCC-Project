@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>''
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
-    <title>Página inicial</title>
+    <title>Owl One</title>
 </head>
 <body>
     <section id="background-gradient">
@@ -15,17 +15,17 @@
         </div>
         <div id="moreOptions-container">
             <button id="moreOptions-button">
-                <div id="button-img">
-                    <img src="" alt="">
-                </div>
+                <img id="moreOpitions-img" src="assets/moreOpitions-icon.png" alt="">
             </button>
         </div>
         <div id="abtUs-container">
             <h1 class="defaultFont" id="abtUs-tittle">
-                Somos uma empresa voltada ao desenvolvimento de softwares para nossos usuários.
+                <i>
+                Somos uma empresa voltada ao desenvolvimento de softwares orientados aos nossos usuários.
+                </i>
             </h1>
             <p class="defaultFont" id="abtUs-paragraph">
-                Oferecemos suporte técnico as nossas soluções e garantimos a segurança de seus dados
+                Trabalhando cada dia para superar o anterior
             </p>
         </div>
         <div id="news-container">
@@ -36,7 +36,9 @@
             <h1 class="defaultFont" id="news-tittle">
                 Parte em construção
             </h1>
-            <img id="construction-icon" src="assets/construction-icon.png" alt="">
+            <div id="constructionIcon-container">
+                <img src="assets/construction-icon.png" alt="">
+            </div>
             <div class="pageDot" id="news-pageDot"></div>
         </div>
 
@@ -67,16 +69,31 @@
             <h1 class="defaultFont" id="footerAbtUs-tittle">
                 Empresa
             </h1>
-            <a href="" class="defaultFooterLink" id="footerLink1">Sobre</a>
-            <a href="" class="defaultFooterLink" id="footerLink2">Contato</a>
-            <a href="" class="defaultFooterLink" id="footerLink3">Suporte</a>
+            <a href="" class="defaultFooterLink">Sobre</a>
+            <a href="" class="defaultFooterLink">Contato</a>
+            <a href="" class="defaultFooterLink">Suporte</a>
+        </div>
+        <div id="footerSolutions-container">
+            <h1 class="defaultFont" id="footerSolutions-tittle">
+                Soluções
+            </h1>
+            <a href="" class="defaultFooterLink">GyMate</a>
         </div>
         <hr class="defaultHr" id="footerHr">
+        <div id="socialMedia-container">
+            <a href="">
+                <img class="socialMedia-image" src="assets/linkedIn-icon.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/owlone.ofc/">
+                <img class="socialMedia-image" src="assets/instagram-icon.png" alt="">
+            </a>
+        </div>
+
         <div id="idiom-container">
             <img id="idiom-icon" src="assets/language-icon.png" alt="">
-            <h1 class="defaultFont" id="idiom-text">
+            <a class="defaultFooterLink" id="idiom-text" href="">
                 Pt-br
-            </h1>
+            </a>
         </div>
     </footer>
 </body>
