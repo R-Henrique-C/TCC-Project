@@ -345,36 +345,36 @@
         font-optical-sizing: auto;
         font-weight: 700;
         font-style: normal;
-        line-height: 37.62px;
+        line-height: 40px;
     }
 
     /* Define the default config of the horizontal line */
     .defaultHr {
         z-index: 1;
         position: absolute;
-        width: 364.4px;
-        height: 1.14px;
-        left: 11.4px;
-        top: 83.6px;
+        width: 426px;
+        height: 2px;
+        left: 13.5px;
+        top: 99px;
         background-color: #414144;
     }
 
     .pageDot {
         position: absolute;
-        width: 15.96px;
-        height: 15.96px;
-        left: 193.6px;
-        bottom: 22.8px;
+        width: 19px;
+        height: 19px;
+        left: 217px;
+        bottom: 25px;
         border-radius: 20px;
         background-color: #414144;
     }
 
     .defaultButton {
         position: absolute;
-        width: 200px;
-        height: 60px;
-        left: 70px;
-        font-size: 28.5px;
+        width: 239px;
+        height: 80px;
+        left: 121px;
+        font-size: 33px;
         font-weight: 400;
         line-height: 28px;
         color: #FFFFFF;
@@ -383,12 +383,12 @@
     }
 
     .defaultFooterLink {
-        width: 60px;
-        height: 16px;
+        width: 81px;
+        height: 21.7px;
         font-family: 'Comfortaa';
         font-style: normal;
         font-weight: 700;
-        font-size: 15.96px;
+        font-size: 19px;
         line-height: 5px;
         text-decoration: none;
         color: #CACACA;
@@ -396,83 +396,83 @@
 
     .socialMedia-image {
         flex: 1;
-        width: 31.92px;
-        height: 31.92px;
+        width: 37px;
+        height: 37px;
     }
 
     /* Define the size of the page */
     body{ 
         position: absolute;
-        width: 410px;
+        width: 480px;
         height: 100%;
         background-color: #414144;
     }
 
     /* Set parts of the background as a gradient */
     #background-gradient {
-        width: 410px;
-        height: 1979.04px;
+        width: 480px;
+        height: 2309px;
         background-image: linear-gradient(189.08deg, #824498 20.26%, #162B9E 56.24%, #9B5676 86.21%, #FF7658 99.12%);
     }
 
     /* A div containing the logo */
     #logo-container {
         position: absolute;
-        width: 205.2px;
-        height: 61.56px;
-        left: 22.8px;
-        top: 22.8px;
+        width: 240px;
+        height: 72px;
+        left: 27px;
+        top: 27px;
     }
 
     /* Logo's icon config */
     #img-logo {
-        width: 205.2px;
-        height: 61.56px;
+        width: 240px;
+        height: 72px;
     }
 
     /* A div containing more options's button */
     #moreOptions-container {
         position: absolute;
-        width: 34.2px;
-        height: 28.5px;
-        right: 22.8px;
-        top: 40px;
+        width: 40px;
+        height: 33.7px;
+        right: 27px;
+        top: 46px;
     }
 
     #moreOptions-button {
         position: absolute;
         background: none;
         border: none;
-        width: 34.2px;
-        height: 28.5px;
+        width: 40px;
+        height: 33.7px;
     }
 
     #moreOpitions-img {
-        width: 34.2px;
-        height: 28.5px;
+        width: 40px;
+        height: 33.7px;
     }
 
     /* A div containing a small text telling about us */
     #abtUs-container {
         position: absolute;
-        width: 364.8px;
-        height: 287.28px;
-        left: 22.8px;
-        top: 198px;
+        width: 426px;
+        height: 331px;
+        left: 27px;
+        top: 232px;
         color: #fff;
     }
 
     /* Define the font size of the tittle */
     #abtUs-tittle {
-        font-size: 34.2px;
+        font-size: 40px;
     }
 
     /* Define the font size of the paragraph */
     #abtUs-paragraph {
         position: absolute;
-        top: 248.46px;
+        top: 265px;
         line-height: normal;
-        font-size: 17.1px;
+        font-size: 20px;
     }
 
     /* A div containing a text telling about us */
@@ -583,20 +583,20 @@
     /* Breaks the content of the page */
     #background-break {
         position: absolute;
-        width: 410px;
-        height: 729.6px;
+        width: 480px;
+        height: 851px;
         left: 0px;
-        top: 729.6px;
+        top: 851px;
         background-color: #414144;
     }
 
     /* Footer with more info */
     footer {
         position: absolute;
-        width: 410px;
-        height: 250.8px;
+        width: 480px;
+        height: 293px;
         left: 0px;
-        top: 2052px;
+        top: 2309px;
         background: #414144;
     }
     
@@ -628,9 +628,9 @@
 
     #footerHr {
         position: absolute;
-        width: 340px;
-        height: 1px;
-        left: 10px;
+        width: 453px;
+        height: 2px;
+        left: 13.5px;
         top: 147px;
         border-radius: 20px;
         border: 0px;
