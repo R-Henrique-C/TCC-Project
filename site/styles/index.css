@@ -17,9 +17,11 @@
     z-index: 1;
     position: absolute;
     width: 320px;
-    height: 1px;
+    height: 2px;
     left: 10px;
     top: 75px;
+    border: none;
+    border-radius: 10px;
     background-color: #414144;
 }
 
@@ -33,22 +35,24 @@
     background-color: #414144;
 }
 
-    .defaultButton {
-        position: absolute;
-        width: 200px;
-        height: 60px;
-        left: 70px;
-        font-size: 25px;
-        font-weight: 400;
-        line-height: 28px;
-        color: #FFFFFF;
-        background: linear-gradient(84.86deg, #162B9E 0%, #5D1F9B 100%);
-        border-radius: 20px;
-    }
+.defaultButton {
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    left: 70px;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #FFFFFF;
+    background: linear-gradient(84.86deg, #162B9E 0%, #5D1F9B 100%);
+    border: none;
+    border-radius: 20px;
+}
 
     .defaultFooterLink {
         width: 60px;
         height: 16px;
+        top: 5px;
         font-family: 'Comfortaa';
         font-style: normal;
         font-weight: 700;
@@ -145,10 +149,10 @@
         position: absolute;
         width: 340px;
         height: 480px;
-        left: 20px;
-        top: 526px;
+        left: 10px;
+        top: 660px;
         background: #F5F5F5;
-        border-radius: 20px 0px 0px 20px;
+        border-radius: 10px;
     }
 
     /* News tittle config */
@@ -189,10 +193,10 @@
         position: absolute;
         width: 340px;
         height: 560px;
-        left: 20px;
-        top: 1106px;
+        left: 10px;
+        top: 1205px;
         background: #FFFFFF;
-        border-radius: 20px 0px 0px 20px;
+        border-radius: 10px;
     }
 
     #solutions-text {
@@ -209,8 +213,8 @@
         position: absolute;
         width: 84px;
         height: 84px;
-        left: 10px;
-        top: 104px;
+        left: 20px;
+        top: 94px;
         border-radius: 10px;
         background: #D9D9D9;
     }
@@ -353,9 +357,11 @@
         z-index: 1;
         position: absolute;
         width: 426px;
-        height: 2px;
+        height: 3px;
         left: 13.5px;
-        top: 99px;
+        top: 94px;
+        border-radius: 20px;
+        border: none;
         background-color: #414144;
     }
 
@@ -371,25 +377,22 @@
 
     .defaultButton {
         position: absolute;
-        width: 239px;
+        width: 266px;
         height: 80px;
-        left: 121px;
+        left: 93.5px;
         font-size: 33px;
         font-weight: 400;
         line-height: 28px;
         color: #FFFFFF;
         background: linear-gradient(84.86deg, #162B9E 0%, #5D1F9B 100%);
+        border: none;
         border-radius: 20px;
     }
 
     .defaultFooterLink {
-        width: 81px;
-        height: 21.7px;
-        font-family: 'Comfortaa';
-        font-style: normal;
-        font-weight: 700;
+        width: auto;
+        height: 22px;
         font-size: 19px;
-        line-height: 5px;
         text-decoration: none;
         color: #CACACA;
     }
@@ -479,87 +482,85 @@
     #news-container {
         z-index: 1;
         position: absolute;
-        width: 387.2px;
-        height: 547.2px;
-        left: 22.8px;
-        top: 599.64px;
+        width: 453px;
+        height: 638px;
+        left: 13.5px;
+        top: 878px;
         background: #F5F5F5;
-        border-radius: 20px 0px 0px 20px;
+        border-radius: 13.5px;
     }
 
     /* News tittle config */
     #news-text {
         position: absolute;
-        width: 149px;
-        height: 38px;
-        left: 22.8px;
-        top: 22.8px;
-        font-size: 34.2px;
+        width: auto;
+        height: auto;
+        left: 27px;
+        top: 27px;
+        font-size: 40px;
     }
 
     #news-tittle {
         position: absolute;
-        width: 308px;
-        height: 31px;
-        left: 37.2px;
-        top: 114px;
-        font-size: 27.36px;
+        width: auto;
+        height: auto;
+        left: 46.5px;
+        top: 128px;
+        font-size: 32px;
         text-align: center;
     }
     
     #constructionIcon-container {
         position: absolute;
-        width: 364.8px;
-        height: 298.68px;
-        left: 11.4px;
+        width: 408px;
+        height: 338.76px;
+        left: 22.5px;
         top: 180.12px;
     }
 
     #construction-icon{
-        width: 364.8px;
-        height: 298.68px;
+        width: 408px;
+        height: 338.76px;
     }
 
     #solutions-container {
         z-index: 1;
         position: absolute;
-        width: 387.2px;
-        height: 638.4px;
-        left: 22.8px;
-        top: 1260.84px;
+        width: 453px;
+        height: 638px;
+        left: 13.5px;
+        top: 1611px;
         background: #FFFFFF;
-        border-radius: 20px 0px 0px 20px;
+        border-radius: 13.5px;
     }
 
     #solutions-text {
         position: absolute;
-        width: 130px;
-        height: 33px;
-        left: 22.8px;
-        top: 22.8px;
-        font-size: 34.2px;
-        padding-top: 10px;
+        width: auto;
+        height: 45px;
+        left: 27px;
+        top: 27px;
+        font-size: 40px;
     }
 
     #GyMateLogo-container {
         position: absolute;
-        width: 84px;
-        height: 84px;
-        left: 10px;
-        top: 104px;
+        width: 112px;
+        height: 112px;
+        left: 27px;
+        top: 124px;
         border-radius: 10px;
         background: #D9D9D9;
     }
 
     #logotype-text {
         position: absolute;
-        width: 200px;
-        height: 56px;
-        right: 20px;
-        top: 116px;
+        width: auto;
+        right: 27px;
+        top: 152px;
         display: flex;
         align-items: center;
-        font-size: 50px;
+        font-size: 67px;
         line-height: 56px;
         text-align: center;
         text-decoration-line: underline;
@@ -568,16 +569,15 @@
 
     #solutions-tittle {
         position: absolute;
-        font-size: 27.36px;
-        width: 375.8px;
-        height: 192px;
-        left: 11.4px;
-        top: 200px;
+        font-size: 27px;
+        width: 426px;
+        left: 13.5px;
+        top: 254px;
     }
 
     #solutions-button {
         position: absolute;
-        top: 440px;
+        top: 473px;
     }
 
     /* Breaks the content of the page */
@@ -595,90 +595,83 @@
         position: absolute;
         width: 480px;
         height: 293px;
-        left: 0px;
         top: 2309px;
         background: #414144;
     }
     
     #footerAbtUs-container {
         position: absolute;
-        width: 84px;
-        height: auto;
-        left: 50px;
-        top: 20px;
+        width: 98px;
+        height: 110;
+        left: 67px;
+        top: 27px;
     }
 
     #footerAbtUs-tittle {
-        font-size: 16px;
+        font-size: 21px;
         color: #FFFFFF;
     }
 
     #footerSolutions-container {
         position: absolute;
-        width: 84px;
+        width: 94px;
         height: auto;
-        right: 50px;
-        top: 20px;
+        right: 67px;
+        top: 27px;
     }
 
     #footerSolutions-tittle {
-        font-size: 16px;
+        font-size: 21px;
         color: #FFFFFF;
     }
 
     #footerHr {
         position: absolute;
         width: 453px;
-        height: 2px;
+        height: 3px;
         left: 13.5px;
-        top: 147px;
-        border-radius: 20px;
-        border: 0px;
+        top: 229px;
         background: #CACACA;
     }
 
     #socialMedia-container {
         position: absolute;
         display: flex;
-        width: 66px;
-        height: 28px;
-        right: 20px;
-        top: 168px;
+        width: 87.5px;
+        height: 37px;
+        right: 27px;
+        top: 242.5px;
     }
     
     #idiom-container {
         position: absolute;
-        width: 96px;
-        height: 28px;
-        left: 20px;
-        top: 168px;
+        width: 200px;
+        height: 37.13px;
+        left: 27px;
+        top: 242.5px;
     }
 
     #idiom-icon {
         position: absolute;
-        width: 28px;
-        height: 28px;
+        width: 37px;
+        height: 37px;
         left: 10px;
     }
 
     #idiom-text {
         position: absolute;
-        width: 48px;
-        height: 20px;
-        top: 4px;
-        left: 48px;
-        font-family: 'Comfortaa';
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
-        color: #FFFFFF;
+        width: 53px;
+        height: auto;
+        bottom: 44px;
+        left: 64px;
+        font-size: 21px;
     }
 }
 
 @media (min-width: 481px) {
     body { 
         position: absolute;
-        width: 410px;
+        width: auto;
         height: 100%;
         background-color: blue;
     }
