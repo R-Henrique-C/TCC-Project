@@ -45,8 +45,9 @@
     line-height: 28px;
     color: #FFFFFF;
     background: linear-gradient(84.86deg, #162B9E 0%, #5D1F9B 100%);
-    border: none;
+    border: solid 1px gray;
     border-radius: 20px;
+    box-shadow: 0 3px #414144;
 }
 
     .defaultFooterLink {
@@ -60,6 +61,10 @@
         line-height: 5px;
         text-decoration: none;
         color: #CACACA;
+    }
+
+    .defaultFooterLink:active {
+        background-color: green;
     }
 
     .socialMedia-image {
@@ -246,6 +251,12 @@
     #solutions-button {
         position: absolute;
         top: 440px;
+
+    }
+
+    #solutions-button:active { 
+        transform: translateY(5px);
+        box-shadow: 0 0px #414144;
     }
 
     /* Breaks the content of the page */
