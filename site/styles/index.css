@@ -1,40 +1,5 @@
-* {
-    padding: 0;
-    margin: 0 auto;
-}
-
-/* Define the default config of the font */
-.defaultFont {
-    font-family: "Comfortaa", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 33px;
-}
-
-/* Define the default config of the horizontal line */
-.defaultHr {
-    z-index: 1;
-    position: absolute;
-    width: 320px;
-    height: 2px;
-    left: 10px;
-    top: 75px;
-    border: none;
-    border-radius: 10px;
-    background-color: #414144;
-}
-
-.pageDot {
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    left: 170px;
-    bottom: 20px;
-    border-radius: 20px;
-    background-color: #414144;
-}
-
+/* 
+-> style for a possible button (- not sure - 2 be implemented)
 .defaultButton {
     position: absolute;
     width: 200px;
@@ -44,646 +9,299 @@
     font-weight: 400;
     line-height: 28px;
     color: #FFFFFF;
-    background: linear-gradient(84.86deg, #162B9E 0%, #5D1F9B 100%);
+    background: #162B9E;
     border: solid 1px gray;
     border-radius: 20px;
     box-shadow: 0 3px #414144;
+} */
+
+* {
+    padding: 0;
+    margin: 0 auto;
 }
 
-    .defaultFooterLink {
-        width: 60px;
-        height: 16px;
-        top: 5px;
-        font-family: 'Comfortaa';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 5px;
-        text-decoration: none;
-        color: #CACACA;
-    }
+/* -> define general styles of elements */
+.defaultFont {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 33px;
+}
+.defaultLinkFont {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+.defaultFooterLink {
+    width: 60px;
+    height: 16px;
+    top: 5px;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 5px;
+    text-decoration: none;
+    color: #CACACA;
+}
+.defaultHr {
+    z-index: 1;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 75px;
+    width: 320px;
+    height: 2px;
+    background-color: #414144;
+    border: none;
+    border-radius: 10px;
+}
+.pageDot {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 166px;
+    bottom: 20px;
+    border-radius: 20px;
+    background-color: #414144;
+}
+.socialMediaImage {
+    flex: 1;
+    width: 28px;
+    height: 28px;
+}
+/* ->/ */
 
-    .defaultFooterLink:active {
-        background-color: green;
-    }
+/* -> define general header related styles */
+.headerColor {
+    width: 100%;
+    height: 5%;
+    background: #414144;
+    opacity: 0;
+}
+.headerColor:hover {
+    opacity: 100%;
+    transition: opacity 0.3s ease-in-out;    
+}
+/* --> define general dropdown related styles */
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #414144;
+    min-width: 150px;
+    right: -4px;
+    border-radius: 2px;
+    box-shadow: 0 0 2px #414144;
+}
+.dropdownLink {
+    display: block;
+    padding: 10px 15px;
+    color: #FFFFFF;
+    text-decoration: none;
 
-    .socialMedia-image {
-        flex: 1;
-        width: 28px;
-        height: 28px;
-    }
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 33px;
+    font-size: 16px;
+}
+/* -->/ */
+/* ->/ */
 
-    /* Define the size of the page */
-    body{ 
-        position: absolute;
-        width: 360px;
-        height: 100%;
-        background-color: #414144;
-    }
+/* mobile screen (w360px X h--px) */
+/* -> background related styles */
+body{ 
+    position: absolute;
+    width: 360px;
+    height: 100%;
+}
+#background-gradient {
+    height: 1830px;
+    background: linear-gradient(150deg, #000000 60%, #162B9E 75%, #2c0259 110%);
+}
+/* ->/ */
 
-    /* Set parts of the background as a gradient */
-    #background-gradient {
-        width: 360px;
-        height: 1800px;
-        background-image: linear-gradient(189.08deg, #824498 20.26%, #162B9E 56.24%, #9B5676 86.21%, #FF7658 99.12%);
-    }
+/* -> header related styles */
+#logo-container {
+    position: absolute;
+    width: 180px;
+    height: 54px;
+    margin-left: 20px;
+    top: 20px;
+}
+#img-logo {
+    width: 100%;
+    height: 100%;
+}
+#dropdown-container {
+    position: absolute;
+    list-style-type: none;
+    width: 30px;
+    height: 25px;
+    right: 20px;
+    top: 37px;
+}
+#dropdown-container:hover .dropdownContent {
+    display: block;
+}
+#dropdown-img {
+    width: 30px;
+    height: 25px;
+}
+/* ->/ */
 
-    /* A div containing the logo */
-    #logo-container {
-        position: absolute;
-        width: 180px;
-        height: 54px;
-        left: 20px;
-        top: 20px;
-    }
+/* -> about us related styles */
+#abtUs-container {
+    margin-top: 100px;
+    width: 320px;
+    padding-left: 10px;
+    color: #fff;
+}
+#abtUs-tittle {
+    font-size: 30px;
+}
+#abtUs-paragraph {
+    margin-top: 30px;
+    line-height: normal;
+    font-size: 15px;
+}
 
-    /* Logo's icon config */
-    #img-logo {
-        width: 180px;
-        height: 54px;
-    }
+/* -> news related styles */
+#news-container {
+    z-index: 1;
+    position: absolute;
+    width: 350px;
+    height: 480px;
+    margin-left: 10px;
+    top: 640px;
+    background: #F5F5F5;
+    border-radius: 10px 0px 0px 10px;
+}
+#news-text {
+    position: absolute;
+    width: 130px;
+    height: 33px;
+    left: 20px;
+    top: 20px;
+    font-size: 30px;
+}
+#constructionIcon-container {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 35%;
+    width: 320px;
+    height: 262.35px;
+}
+#constructionIcon{
+    width: 100%;
+    height: 100%;
+}
+/* ->/ */
 
-    /* A div containing more options's button */
-    #moreOptions-container {
-        position: absolute;
-        width: 30px;
-        height: 25px;
-        right: 20px;
-        top: 37px;
-    }
+/* -> app related styles */
+#solutions-container {
+    position: absolute;
+    margin-top: 768px;
+    background: #414144;
+    border-radius: 10px;
+    width: 360px;
+    height: 560px;
+    border-radius: 0px;
+}
+#solutions-text {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 130px;
+    height: 33px;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+#solutions-hr {
+    background-color: #FFFFFF;
+}
+#logotype-text {
+    position: absolute;
+    width: 230px;
+    margin-left: 85px;
+    margin-top: 116px;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    text-align: center;
+    line-height: 56px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+#solutions-tittle {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 60%;
+    width: 315px;
+    height: 192px;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+/* ->/ */
 
-    #moreOptions-button {
-        position: absolute;
-        background: none;
-        border: none;
-        width: 30px;
-        height: 25px;
-    }
-
-    #moreOpitions-img {
-        width: 30px;
-        height: 25px;
-    }
-
-    /* A div containing a small text telling about us */
-    #abtUs-container {
-        position: absolute;
-        width: 320px;
-        height: 252px;
-        left: 20px;
-        top: 174px;
-        color: #fff;
-    }
-
-    /* Define the font size of the tittle */
-    #abtUs-tittle {
-        font-size: 30px;
-    }
-
-    /* Define the font size of the paragraph */
-    #abtUs-paragraph {
-        position: absolute;
-        top: 218px;
-        line-height: normal;
-        font-size: 15px;
-    }
-
-    /* A div containing a text telling about us */
-    #news-container {
-        z-index: 1;
-        position: absolute;
-        width: 340px;
-        height: 480px;
-        left: 10px;
-        top: 660px;
-        background: #F5F5F5;
-        border-radius: 10px;
-    }
-
-    /* News tittle config */
-    #news-text {
-        position: absolute;
-        width: 130px;
-        height: 33px;
-        left: 20px;
-        top: 20px;
-        font-size: 30px;
-    }
-
-    #news-tittle {
-        position: absolute;
-        width: 320px;
-        height: 27px;
-        left: 10px;
-        top: 100px;
-        font-size: 24px;
-        text-align: center;
-    }
-    
-    #constructionIcon-container {
-        position: absolute;
-        width: 320px;
-        height: 262.35px;
-        left: 10px;
-        top: 158px;
-    }
-
-    #constructionIcon{
-        width: 340px;
-        height: 480px;
-    }
-
-    #solutions-container {
-        z-index: 1;
-        position: absolute;
-        width: 340px;
-        height: 560px;
-        left: 10px;
-        top: 1205px;
-        background: #FFFFFF;
-        border-radius: 10px;
-    }
-
-    #solutions-text {
-        position: absolute;
-        width: 130px;
-        height: 33px;
-        left: 20px;
-        top: 20px;
-        font-size: 30px;
-        padding-top: 10px;
-    }
-
-    #GyMateLogo-container {
-        position: absolute;
-        width: 84px;
-        height: 84px;
-        left: 20px;
-        top: 94px;
-        border-radius: 10px;
-        background: #D9D9D9;
-    }
-
-    #logotype-text {
-        position: absolute;
-        width: 200px;
-        height: 56px;
-        right: 20px;
-        top: 116px;
-        display: flex;
-        align-items: center;
-        font-size: 50px;
-        line-height: 56px;
-        text-align: center;
-        text-decoration-line: underline;
-        color: #162B9E;
-    }
-
-    #solutions-tittle {
-        position: absolute;
-        font-size: 24px;
-        width: 315px;
-        height: 192px;
-        left: 10px;
-        top: 200px;
-    }
-
-    #solutions-button {
-        position: absolute;
-        top: 440px;
-
-    }
-
-    #solutions-button:active { 
-        transform: translateY(5px);
-        box-shadow: 0 0px #414144;
-    }
-
-    /* Breaks the content of the page */
-    #background-break {
-        position: absolute;
-        width: 360px;
-        height: 640px;
-        left: 0px;
-        top: 640px;
-        background-color: #414144;
-    }
-
-    /* Footer with more info */
-    footer {
-        position: absolute;
-        width: 360px;
-        height: 220px;
-        left: 0px;
-        top: 1800px;
-        background: #414144;
-    }
-    
-    #footerAbtUs-container {
-        position: absolute;
-        width: 84px;
-        height: auto;
-        left: 50px;
-        top: 20px;
-    }
-
-    #footerAbtUs-tittle {
-        font-size: 16px;
-        color: #FFFFFF;
-    }
-
-    #footerSolutions-container {
-        position: absolute;
-        width: 84px;
-        height: auto;
-        right: 50px;
-        top: 20px;
-    }
-
-    #footerSolutions-tittle {
-        font-size: 16px;
-        color: #FFFFFF;
-    }
-
-    #footerHr {
-        position: absolute;
-        width: 340px;
-        height: 1px;
-        left: 10px;
-        top: 147px;
-        border-radius: 20px;
-        border: 0px;
-        background: #CACACA;
-    }
-
-    #socialMedia-container {
-        position: absolute;
-        display: flex;
-        width: 66px;
-        height: 28px;
-        right: 20px;
-        top: 168px;
-    }
-    
-    #idiom-container {
-        position: absolute;
-        width: 96px;
-        height: 28px;
-        left: 20px;
-        top: 168px;
-    }
-
+/* -> styles for additional info */
+footer {
+    width: 100%;
+    height: 68px;
+    background: #414144;
+}
+#socialMedia-container {
+    position: absolute;
+    display: flex;
+    width: 66px;
+    height: 28px;
+    right: 20px;
+    margin-top: 20px;
+}
+/* --> idiom related styles */
+#idiom-container {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 96px;
+    height: 28px;
+}
 #idiom-icon {
     position: absolute;
     width: 28px;
     height: 28px;
-    left: 10px;
+    left: 20px;
 }
-
 #idiom-text {
     position: absolute;
     width: 48px;
     height: 20px;
-    top: 4px;
-    left: 48px;
+    margin-left: 53px;
     font-family: 'Comfortaa';
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
 }
+/* -->/ */
+/* ->/ */
 
+/* responsive screens (2 be implemented) */
+/* mobile screen (w480px X h--px) */
 @media (min-width: 361px) {
-        /* Define the default config of the font */
-    .defaultFont {
-        font-family: "Comfortaa", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 700;
-        font-style: normal;
-        line-height: 40px;
-    }
 
-    /* Define the default config of the horizontal line */
-    .defaultHr {
-        z-index: 1;
-        position: absolute;
-        width: 426px;
-        height: 3px;
-        left: 13.5px;
-        top: 94px;
-        border-radius: 20px;
-        border: none;
-        background-color: #414144;
-    }
-
-    .pageDot {
-        position: absolute;
-        width: 19px;
-        height: 19px;
-        left: 217px;
-        bottom: 25px;
-        border-radius: 20px;
-        background-color: #414144;
-    }
-
-    .defaultButton {
-        position: absolute;
-        width: 266px;
-        height: 80px;
-        left: 93.5px;
-        font-size: 33px;
-        font-weight: 400;
-        line-height: 28px;
-        color: #FFFFFF;
-        background: linear-gradient(84.86deg, #162B9E 0%, #5D1F9B 100%);
-        border: none;
-        border-radius: 20px;
-    }
-
-    .defaultFooterLink {
-        width: auto;
-        height: 22px;
-        font-size: 19px;
-        text-decoration: none;
-        color: #CACACA;
-    }
-
-    .socialMedia-image {
-        flex: 1;
-        width: 37px;
-        height: 37px;
-    }
-
-    /* Define the size of the page */
-    body{ 
-        position: absolute;
-        width: 480px;
-        height: 100%;
-        background-color: #414144;
-    }
-
-    /* Set parts of the background as a gradient */
-    #background-gradient {
-        width: 480px;
-        height: 2309px;
-        background-image: linear-gradient(189.08deg, #824498 20.26%, #162B9E 56.24%, #9B5676 86.21%, #FF7658 99.12%);
-    }
-
-    /* A div containing the logo */
-    #logo-container {
-        position: absolute;
-        width: 240px;
-        height: 72px;
-        left: 27px;
-        top: 27px;
-    }
-
-    /* Logo's icon config */
-    #img-logo {
-        width: 240px;
-        height: 72px;
-    }
-
-    /* A div containing more options's button */
-    #moreOptions-container {
-        position: absolute;
-        width: 40px;
-        height: 33.7px;
-        right: 27px;
-        top: 46px;
-    }
-
-    #moreOptions-button {
-        position: absolute;
-        background: none;
-        border: none;
-        width: 40px;
-        height: 33.7px;
-    }
-
-    #moreOpitions-img {
-        width: 40px;
-        height: 33.7px;
-    }
-
-    /* A div containing a small text telling about us */
-    #abtUs-container {
-        position: absolute;
-        width: 426px;
-        height: 331px;
-        left: 27px;
-        top: 232px;
-        color: #fff;
-    }
-
-    /* Define the font size of the tittle */
-    #abtUs-tittle {
-        font-size: 40px;
-    }
-
-    /* Define the font size of the paragraph */
-    #abtUs-paragraph {
-        position: absolute;
-        top: 265px;
-        line-height: normal;
-        font-size: 20px;
-    }
-
-    /* A div containing a text telling about us */
-    #news-container {
-        z-index: 1;
-        position: absolute;
-        width: 453px;
-        height: 638px;
-        left: 13.5px;
-        top: 878px;
-        background: #F5F5F5;
-        border-radius: 13.5px;
-    }
-
-    /* News tittle config */
-    #news-text {
-        position: absolute;
-        width: auto;
-        height: auto;
-        left: 27px;
-        top: 27px;
-        font-size: 40px;
-    }
-
-    #news-tittle {
-        position: absolute;
-        width: auto;
-        height: auto;
-        left: 46.5px;
-        top: 128px;
-        font-size: 32px;
-        text-align: center;
-    }
-    
-    #constructionIcon-container {
-        position: absolute;
-        width: 408px;
-        height: 338.76px;
-        left: 22.5px;
-        top: 180.12px;
-    }
-
-    #construction-icon{
-        width: 408px;
-        height: 338.76px;
-    }
-
-    #solutions-container {
-        z-index: 1;
-        position: absolute;
-        width: 453px;
-        height: 638px;
-        left: 13.5px;
-        top: 1611px;
-        background: #FFFFFF;
-        border-radius: 13.5px;
-    }
-
-    #solutions-text {
-        position: absolute;
-        width: auto;
-        height: 45px;
-        left: 27px;
-        top: 27px;
-        font-size: 40px;
-    }
-
-    #GyMateLogo-container {
-        position: absolute;
-        width: 112px;
-        height: 112px;
-        left: 27px;
-        top: 124px;
-        border-radius: 10px;
-        background: #D9D9D9;
-    }
-
-    #logotype-text {
-        position: absolute;
-        width: auto;
-        right: 27px;
-        top: 152px;
-        display: flex;
-        align-items: center;
-        font-size: 67px;
-        line-height: 56px;
-        text-align: center;
-        text-decoration-line: underline;
-        color: #162B9E;
-    }
-
-    #solutions-tittle {
-        position: absolute;
-        font-size: 27px;
-        width: 426px;
-        left: 13.5px;
-        top: 254px;
-    }
-
-    #solutions-button {
-        position: absolute;
-        top: 473px;
-    }
-
-    /* Breaks the content of the page */
-    #background-break {
-        position: absolute;
-        width: 480px;
-        height: 851px;
-        left: 0px;
-        top: 851px;
-        background-color: #414144;
-    }
-
-    /* Footer with more info */
-    footer {
-        position: absolute;
-        width: 480px;
-        height: 293px;
-        top: 2309px;
-        background: #414144;
-    }
-    
-    #footerAbtUs-container {
-        position: absolute;
-        width: 98px;
-        height: 110;
-        left: 67px;
-        top: 27px;
-    }
-
-    #footerAbtUs-tittle {
-        font-size: 21px;
-        color: #FFFFFF;
-    }
-
-    #footerSolutions-container {
-        position: absolute;
-        width: 94px;
-        height: auto;
-        right: 67px;
-        top: 27px;
-    }
-
-    #footerSolutions-tittle {
-        font-size: 21px;
-        color: #FFFFFF;
-    }
-
-    #footerHr {
-        position: absolute;
-        width: 453px;
-        height: 3px;
-        left: 13.5px;
-        top: 229px;
-        background: #CACACA;
-    }
-
-    #socialMedia-container {
-        position: absolute;
-        display: flex;
-        width: 87.5px;
-        height: 37px;
-        right: 27px;
-        top: 242.5px;
-    }
-    
-    #idiom-container {
-        position: absolute;
-        width: 200px;
-        height: 37.13px;
-        left: 27px;
-        top: 242.5px;
-    }
-
-    #idiom-icon {
-        position: absolute;
-        width: 37px;
-        height: 37px;
-        left: 10px;
-    }
-
-    #idiom-text {
-        position: absolute;
-        width: 53px;
-        height: auto;
-        bottom: 44px;
-        left: 64px;
-        font-size: 21px;
-    }
 }
 
+/* tablet screen (w768px X h--px) */
 @media (min-width: 481px) {
-    body { 
-        position: absolute;
-        width: auto;
-        height: 100%;
-        background-color: blue;
-    }
+
+}
+
+/* desktop screen (w1920px X h--px) */
+@media (min-width: 100px) {
+
 }
