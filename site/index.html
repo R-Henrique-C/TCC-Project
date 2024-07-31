@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Owl One</title>
+    <title>Homepage</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
     <section id="background-gradient">
+        <div class="headerColor" id="header">
+        </div>
         <div id="logo-container">
             <img id="img-logo" src="assets/ourLogo-icon.png" alt="Nossa logo">
         </div>
-        <div id="moreOptions-container">
-            <button id="moreOptions-button">
-                <img id="moreOpitions-img" src="assets/moreOpitions-icon.png" alt="">
-            </button>
+        <div id="dropdown-container">
+            <li>
+                <img id="dropdown-img" src="assets/moreOpitions-icon.png" alt="">
+            </li>
+            <div class="dropdownContent">
+                <a class="dropdownLink" href="">Sobre</a>
+                <a class="dropdownLink" href="">Contato</a>
+                <a class="dropdownLink" href="">Suporte</a>
+                <a class="dropdownLink" href="">GyMate</a>
+            </div>
         </div>
         <div id="abtUs-container">
             <h1 class="defaultFont" id="abtUs-tittle">
@@ -33,68 +41,38 @@
                 Notícias
             </h1>
             <hr class="defaultHr">
-            <h1 class="defaultFont" id="news-tittle">
-                Parte em construção
-            </h1>
             <div id="constructionIcon-container">
                 <img id="construction-icon" src="assets/construction-icon.png" alt="">
             </div>
             <div class="pageDot"></div>
         </div>
-
         <div id="solutions-container">
             <h1 class="defaultFont" id="solutions-text">
                 Soluções
             </h1>
-            <hr class="defaultHr">
-            <div id="GyMateLogo-container"></div>
+            <hr id="solutions-hr" class="defaultHr">
             <h1 class="defaultFont" id="logotype-text">
                 GyMate
             <h1>
             <h1 class="defaultFont" id="solutions-tittle">
-                Com GyMate, você pode customizar sua rotina de treinos, compartilhar seus avanços e conversar com seu treinador
+                Customise sua rotina de treinos e converse com seu treinador sem nem sair de nosso aplicativo! Clique <a class="defaultLinkFont" href="">aqui</a> para experimentar.
             </h1>
-            <form action="./pages/gymate-page.html" method="POST">
-                <button class="defaultButton" id="solutions-button">
-                    Saiba mais
-                </button>
-            </form>
-            <div class="pageDot"></div>
         </div>
     </section>
-
-    <section id="background-break">
-    </section>
-
     <footer>
-        <div id="footerAbtUs-container">
-            <h1 class="defaultFont" id="footerAbtUs-tittle">
-                Empresa
-            </h1>
-            <a href="" class="defaultFooterLink">Sobre</a>
-            <a href="" class="defaultFooterLink">Contato</a>
-            <a href="" class="defaultFooterLink">Suporte</a>
-        </div>
-        <div id="footerSolutions-container">
-            <h1 class="defaultFont" id="footerSolutions-tittle">
-                Soluções
-            </h1>
-            <a href="./pages/gymate-page.html" class="defaultFooterLink">GyMate</a>
-        </div>
-        <hr class="defaultHr" id="footerHr">
         <div id="socialMedia-container">
             <a href="">
-                <img class="socialMedia-image" src="assets/linkedIn-icon.png" alt="">
+                <img class="socialMediaImage" src="assets/linkedIn-icon.png" alt="">
             </a>
             <a href="https://www.instagram.com/owlone.ofc/">
-                <img class="socialMedia-image" src="assets/instagram-icon.png" alt="">
+                <img class="socialMediaImage" src="assets/instagram-icon.png" alt="">
             </a>
         </div>
         <div id="idiom-container">
             <img id="idiom-icon" src="assets/language-icon.png" alt="">
-            <a class="defaultFooterLink" id="idiom-text" href="">
+            <p class="defaultFooterLink" id="idiom-text" href="">
                 Pt-br
-            </a>
+            </p>
         </div>
     </footer>
 </body>
