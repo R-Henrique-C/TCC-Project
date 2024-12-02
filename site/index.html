@@ -10,53 +10,58 @@
 </head>
 <body>
     <section id="background-gradient">
-        <div class="headerColor" id="header">
-        </div>
-        <div id="logo-container">
-            <img id="img-logo" src="assets/ourLogo-icon.png" alt="Nossa logo">
-        </div>
-        <div id="dropdown-container">
-            <li>
-                <img id="dropdown-img" src="assets/moreOpitions-icon.png" alt="">
-            </li>
-            <div class="dropdownContent">
-                <a class="dropdownLink" href="">Sobre</a>
-                <a class="dropdownLink" href="">Contato</a>
-                <a class="dropdownLink" href="">Suporte</a>
-                <a class="dropdownLink" href="">GyMate</a>
+        <div class="header">
+            <div id="logo-container">
+                <img id="img-logo" src="assets/ourLogo-icon.png" alt="Nossa logo">
+            </div>
+            <div id="dropdown-container">
+                <button id="dropdown-button">
+                    <img id="dropdown-img" src="assets/moreOpitions-icon.png" alt="">
+                </button>
+                <div class="dropdownContent">
+                    <a class="dropdownLink" href="#abtUs-container">Sobre</a>
+                    <a class="dropdownLink" href="#solutions-container">Soluções</a>
+                    <a class="dropdownLink" href="#userSupport">Suporte</a>
+                </div>
             </div>
         </div>
+
         <div id="abtUs-container">
             <h1 class="defaultFont" id="abtUs-tittle">
-                <i>
                 Somos uma empresa voltada ao desenvolvimento de softwares orientados aos nossos usuários.
-                </i>
             </h1>
             <p class="defaultFont" id="abtUs-paragraph">
                 Trabalhando cada dia para superar o anterior
             </p>
         </div>
-        <div id="news-container">
-            <h1 class="defaultFont" id="news-text">
-                Notícias
+
+        <div id="solutions-container">
+            <h1 class="defaultFont" id="solutions-tittle">
+                ⁃ Soluções
             </h1>
             <hr class="defaultHr">
-            <div id="constructionIcon-container">
-                <img id="construction-icon" src="assets/construction-icon.png" alt="">
-            </div>
-            <div class="pageDot"></div>
-        </div>
-        <div id="solutions-container">
+            <h1 class="defaultFont" id="logotype-tittle">GYMATE<h1>
             <h1 class="defaultFont" id="solutions-text">
-                Soluções
+                Customise sua rotina de treinos e converse com seu treinador sem nem sair de nosso aplicativo! Clique <a id="solutions-link" class="defaultLinkFont" href="">aqui</a> para experimentar.
             </h1>
-            <hr id="solutions-hr" class="defaultHr">
-            <h1 class="defaultFont" id="logotype-text">
-                GyMate
-            <h1>
-            <h1 class="defaultFont" id="solutions-tittle">
-                Customise sua rotina de treinos e converse com seu treinador sem nem sair de nosso aplicativo! Clique <a class="defaultLinkFont" href="">aqui</a> para experimentar.
+        </div>
+
+        <div id="userSupport">
+            <h1 class="defaultFont" id="userSupport-tittle">
+                ⁃ Suporte
             </h1>
+            <div id="userSupportDropdown-container">
+                <hr class="defaultHr" id="userSupport-line">
+                <p class="defaultFont" id="userSupport-text">
+                    Precisa de ajuda em relação aos nossos produtos? Nos contate por um de nossos canais abaixo
+                </p>
+                <p class="defaultFont" id="userSupport-text">
+                    • Endereço de Email <a id="userSupport-link" class="defaultLinkFont" href="">owlone.empresa@gmail.com</a>
+                </p>
+                <p class="defaultFont" id="userSupport-text">
+                    • Página do Instagram <a id="userSupport-link" class="defaultLinkFont" href="https://www.instagram.com/owlone.ofc/">owlone.ofc</a>
+                </p>
+            </div>
         </div>
     </section>
     <footer>
@@ -70,10 +75,12 @@
         </div>
         <div id="idiom-container">
             <img id="idiom-icon" src="assets/language-icon.png" alt="">
-            <p class="defaultFooterLink" id="idiom-text" href="">
+            <p class="defaultFooterLink" id="idiom-text">
                 Pt-br
             </p>
         </div>
     </footer>
+
+    <script src="/TCC-Project/site/index.js"></script>
 </body>
 </html>

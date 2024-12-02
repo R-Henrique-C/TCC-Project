@@ -1,5 +1,5 @@
-/* 
--> style for a possible button (- not sure - 2 be implemented)
+/* -> old/useless styles */
+/* --> style for a possible button (- not sure - to be implemented)
 .defaultButton {
     position: absolute;
     width: 200px;
@@ -14,114 +14,110 @@
     border-radius: 20px;
     box-shadow: 0 3px #414144;
 } */
+ 
+/* --> 
+    .pageDot {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    margin-left: 166px;
+    bottom: 5%;
+    border-radius: 20px;
+    background-color: #414144;
+} */
+/* ->/ */
+
+@keyframes bgChange {
+    from {background-color: #000000;}
+    to {background-color: #414144;}
+}
+
+/* @keyframes linkJump {
+    from {transform: translateY(2px);}
+    50% {transform: translateY(0);}
+    to {transform: translateY(-2px);}
+} */
 
 * {
     padding: 0;
     margin: 0 auto;
 }
 
-/* -> define general styles of elements */
+/* -> general styles of elements */
 .defaultFont {
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    line-height: 33px;
+    line-height: 100%;
 }
 .defaultLinkFont {
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    line-height: 33px;
+    line-height: 100%;
     color: #FFFFFF;
 }
-.defaultFooterLink {
-    width: 60px;
-    height: 16px;
-    top: 5px;
-    font-family: 'Comfortaa';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 5px;
-    text-decoration: none;
-    color: #CACACA;
-}
 .defaultHr {
-    z-index: 1;
-    position: absolute;
-    margin-left: 20px;
-    margin-top: 75px;
-    width: 320px;
+    margin-left: 5%;
+    margin-top: 10%;
+    width: 90%;
     height: 2px;
-    background-color: #414144;
+    background-color: #fff;
     border: none;
     border-radius: 10px;
 }
-.pageDot {
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    left: 166px;
-    bottom: 20px;
-    border-radius: 20px;
-    background-color: #414144;
-}
 .socialMediaImage {
     flex: 1;
-    width: 28px;
-    height: 28px;
+    width: 100%;
+    height: 100%;
 }
 /* ->/ */
 
-/* -> define general header related styles */
-.headerColor {
+/* -> header related styles */
+.header {
     width: 100%;
-    height: 5%;
-    background: #414144;
-    opacity: 0;
+    height: 5.5%;
 }
-.headerColor:hover {
-    opacity: 100%;
-    transition: opacity 0.3s ease-in-out;    
+.header:hover {
+    animation: bgChange 0.2s ease-in forwards;
 }
-/* --> define general dropdown related styles */
+/* --> dropdown related styles */
 .dropdownContent {
     display: none;
     position: absolute;
+    right: 0%;
     background-color: #414144;
-    min-width: 150px;
-    right: -4px;
+    min-width: 500%;
     border-radius: 2px;
-    box-shadow: 0 0 2px #414144;
+    box-shadow: 0 0 5px #2a2a2b;
 }
 .dropdownLink {
     display: block;
-    padding: 10px 15px;
+    padding: 10%;
     color: #FFFFFF;
     text-decoration: none;
-
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    line-height: 33px;
-    font-size: 16px;
+    line-height: 100%;
 }
 /* -->/ */
 /* ->/ */
 
-/* mobile screen (w360px X h--px) */
+/* mobile screen (w360px X h----px) */
 /* -> background related styles */
 body{ 
     position: absolute;
-    width: 360px;
+    width: 100%;
     height: 100%;
+    /* 865px */
 }
 #background-gradient {
-    height: 1830px;
-    background: linear-gradient(150deg, #000000 60%, #162B9E 75%, #2c0259 110%);
+    height: 200%;
+    background: linear-gradient(150deg, #000000 60%, #162B9E 90%, #2c0259 110%);
 }
 /* ->/ */
 
@@ -130,8 +126,8 @@ body{
     position: absolute;
     width: 180px;
     height: 54px;
-    margin-left: 20px;
-    top: 20px;
+    margin-left: 5%;
+    top: 2.3%;
 }
 #img-logo {
     width: 100%;
@@ -140,118 +136,131 @@ body{
 #dropdown-container {
     position: absolute;
     list-style-type: none;
-    width: 30px;
-    height: 25px;
-    right: 20px;
-    top: 37px;
+    width: 8.3%;
+    right: 5%;
+    top: 4.3%;
 }
 #dropdown-container:hover .dropdownContent {
     display: block;
+    animation-name: DpDoTrans;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    /* transition: display 10s ease-in-out;
+    0.3s */
+} 
+#dropdown-button {
+    background: none;
+    border: none;
 }
 #dropdown-img {
-    width: 30px;
-    height: 25px;
+    width: 100%;
+    height: 100%;
 }
 /* ->/ */
 
 /* -> about us related styles */
 #abtUs-container {
-    margin-top: 100px;
-    width: 320px;
-    padding-left: 10px;
+    margin-top: 27.8%;
+    width: auto;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
     color: #fff;
 }
 #abtUs-tittle {
     font-size: 30px;
 }
 #abtUs-paragraph {
-    margin-top: 30px;
+    margin-top: 8.5%;
     line-height: normal;
     font-size: 15px;
 }
+/* ->/ */
 
-/* -> news related styles */
-#news-container {
-    z-index: 1;
-    position: absolute;
-    width: 350px;
-    height: 480px;
-    margin-left: 10px;
-    top: 640px;
-    background: #F5F5F5;
-    border-radius: 10px 0px 0px 10px;
+/* -> gymate related styles */
+#solutions-container {
+    margin-top: 50%;
+    background: #41414473;
+    width: 95%;
+    height: 30%;
+    border-radius: 1%;
 }
-#news-text {
-    position: absolute;
-    width: 130px;
-    height: 33px;
-    left: 20px;
-    top: 20px;
+#solutions-tittle {
+    margin-left: 5%;
+    padding-top: 10%;
     font-size: 30px;
+    color: #FFFFFF;
 }
-#constructionIcon-container {
-    position: absolute;
-    margin-left: 10px;
-    margin-top: 35%;
-    width: 320px;
-    height: 262.35px;
+#logotype-tittle {
+    margin-left: 16%;
+    margin-top: 10%;
+    display: inline-block;
+    font-size: 50px;
+    color: #FFFFFF;
 }
-#constructionIcon{
-    width: 100%;
-    height: 100%;
+#solutions-text {
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 10%;
+    font-size: 20px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+#solutions-link:hover {
+    text-decoration: none;
+    /* animation-name: linkJump;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; */
 }
 /* ->/ */
 
-/* -> app related styles */
-#solutions-container {
-    position: absolute;
-    margin-top: 768px;
+/* -> customer support related styles */
+#userSupport {
+    margin-top: 25%;
     background: #414144;
-    border-radius: 10px;
-    width: 360px;
-    height: 560px;
-    border-radius: 0px;
+    width: 95%;
+    height: 5%;
+    border-radius: 20px;
 }
-#solutions-text {
-    position: absolute;
-    margin-left: 20px;
-    margin-top: 30px;
-    width: 130px;
-    height: 33px;
+#userSupport-tittle {
+    margin-left: 5%;
+    padding-top: 8%;
     font-size: 30px;
+    color: #FFF;
+}
+#userSupport-text {
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 10%;
+    font-size: 20px;
+    line-height: 150%;
     color: #FFFFFF;
 }
-#solutions-hr {
-    background-color: #FFFFFF;
+#userSupport-line {
+    margin-top: 0;
 }
-#logotype-text {
+#userSupport-link {
+    text-decoration: underline;
+}
+#userSupportDropdown-container {
+    display: none;
     position: absolute;
-    width: 230px;
-    margin-left: 85px;
-    margin-top: 116px;
-    display: flex;
-    align-items: center;
-    font-size: 50px;
-    text-align: center;
-    line-height: 56px;
-    text-decoration-line: underline;
-    color: #FFFFFF;
 }
-#solutions-tittle {
-    position: absolute;
-    margin-left: 20px;
-    margin-top: 60%;
-    width: 315px;
-    height: 192px;
-    font-size: 24px;
-    color: #FFFFFF;
+#userSupport:hover #userSupportDropdown-container {
+    display: inline-block;
+    background: #414144;
+    width: 95%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 /* ->/ */
 
 /* -> styles for additional info */
 footer {
     width: 100%;
-    height: 68px;
+    height: 8%;
     background: #414144;
 }
 #socialMedia-container {
@@ -259,14 +268,14 @@ footer {
     display: flex;
     width: 66px;
     height: 28px;
-    right: 20px;
-    margin-top: 20px;
+    right: 5%;
+    margin-top: 5%;
 }
 /* --> idiom related styles */
 #idiom-container {
     position: absolute;
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 5%;
+    margin-top: 5%;
     width: 96px;
     height: 28px;
 }
@@ -278,30 +287,194 @@ footer {
 }
 #idiom-text {
     position: absolute;
-    width: 48px;
-    height: 20px;
-    margin-left: 53px;
+    width: 100%;
+    margin-left: 60%;
+    margin-top: 5%;
     font-family: 'Comfortaa';
     font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
     color: #FFFFFF;
 }
 /* -->/ */
 /* ->/ */
 
-/* responsive screens (2 be implemented) */
+/* responsive screens */
 /* mobile screen (w480px X h--px) */
 @media (min-width: 361px) {
+    body {
+        height: 865px;
+    }
+    /* -> */
+    .defaultHr {
+        height: 3px;
+    }
+    .dropdownLink {
+        font-size: 22px;
+    }
+    /* ->/ */
 
+    /* -> background related styles */
+    #background-gradient {
+        height: 2266px;
+    }
+    /* ->/ */
+
+    /* -> header related styles */
+    #logo-container {
+        width: 240px;
+        height: 72px;
+    }
+    /* ->/ */
+
+    /* -> about us related styles */
+    #abtUs-tittle {
+        font-size: 40px;
+    }
+    #abtUs-paragraph {
+        font-size: 20px;
+    }
+
+    /* -> gymate related styles */
+    #solutions-tittle {
+        font-size: 40px;
+    }
+    #logotype-tittle {
+        margin-left: 16%;
+        font-size: 66px;
+    }
+    #solutions-text {
+        font-size: 30px;
+    }
+    /* ->/ */
+
+    /* -> customer support related styles */
+    #userSupport-tittle {
+        font-size: 40px;    
+    }
+    #userSupport-text {
+        font-size: 25px;
+    }
+    /* ->/ */
+
+    /* -> styles for additional info */
+    footer {
+        height: 10%;
+    }
+    #socialMedia-container {
+        right: 6%;
+        margin-top: 27px;
+        width: 87.5px;
+        height: 37px;
+    }
+    /* --> idiom related styles */
+    #idiom-container {
+        margin-left: 6%;
+        margin-top: 6%;
+        width: 95px;
+        height: 37.13px;
+    }
+    #idiom-icon {
+        width: 37px;
+        height: 37px;
+    }
+    #idiom-text {
+        margin-left: 69px;
+        width: 60px;
+        font-size: 23px;
+    }
+    /* -->/ */
+    /* ->/ */
 }
 
 /* tablet screen (w768px X h--px) */
 @media (min-width: 481px) {
+    /* -> background related styles */
+    #background-gradient {
+        height: 3496px;
+    }
+    /* ->/ */
 
+    .defaultHr {
+        height: 6px;
+    }
+    .dropdownLink {
+        font-size: 35px;
+    }
+
+    /* -> header related styles */
+    .header {
+        height: 4%;
+    }
+    #logo-container {
+        width: 328px;
+        height: 96px;
+    }
+    /* ->/ */
+
+    /* -> about us related styles */
+    #abtUs-tittle {
+        font-size: 64px;
+    }
+    #abtUs-paragraph {
+        font-size: 32px;
+    }
+    /* ->/ */
+
+    /* -> gymate related styles */
+    #solutions-tittle {
+        font-size: 64px;
+    }
+    #logotype-tittle {
+        margin-left: 22%;
+        font-size: 86px;
+    }
+    #solutions-text {
+        font-size: 32px;
+    }
+    /* ->/ */
+
+    /* -> customer support related styles */
+    #userSupport-tittle {
+        font-size: 64px;
+    }
+    #userSupport-text {
+        font-size: 32px;
+    }
+    /* ->/ */
+
+    /* -> styles for additional info */
+    footer {
+        height: 15%;
+    }
+    #socialMedia-container {
+        width: 141px;
+        height: 60px;
+        right: 5%;
+        margin-top: 5%;
+    }
+    /* --> idiom related styles */
+    #idiom-container {
+        margin-left: 5%;
+        margin-top: 5%;
+        width: 95px;
+        height: 60px;
+    }
+    #idiom-icon {
+        width: 60px;
+        height: 60px;
+    }
+    #idiom-text {
+        position: absolute;
+        margin-left: 103px;
+        margin-top: 5%;
+        width: 103px;
+        font-size: 40px;
+    }
+    /* -->/ */
+    /* ->/ */
 }
 
 /* desktop screen (w1920px X h--px) */
-@media (min-width: 100px) {
+/* @media (min-width: 769px) {
 
-}
+} */
